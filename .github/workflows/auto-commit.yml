@@ -1,0 +1,82 @@
+name: Auto Commit
+
+on:
+  schedule:
+    # 매일 자정 (UTC 기준) - KST 오전 9시
+    - cron: '0 0 * * *'
+
+  workflow_dispatch: # 수동 실행 가능
+
+  push:
+    branches:
+      - main
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Git
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+
+      - name: Get current date
+        id: date
+        run: echo "date=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_OUTPUT
+
+      - name: Create/Update activity file
+        run: |
+          mkdir -p activity
+          echo "Last updated: ${{ steps.date.outputs.date }}" > activity/latest.txt
+          echo "Commit count: $(git rev-list --count HEAD 2>/dev/null || echo 0)" >> activity/latest.txt
+          echo "Branch: $(git branch --show-current)" >> activity/latest.txt
+
+      - name: Check for changes
+        id: verify
+        run: |
+          git add -A
+          if git diff --staged --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes to commit"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Changes detected"
+          fi
+
+      - name: Commit changes
+        if: steps.verify.outputs.changed == 'true'
+        run: |
+          git commit -m "chore: auto-commit on ${{ steps.date.outputs.date }}
+
+          🤖 Generated with GitHub Actions
+
+          - Updated activity tracking
+          - Automated daily commit
+
+          Co-Authored-By: GitHub Actions <actions@github.com>"
+
+      - name: Push changes
+        if: steps.verify.outputs.changed == 'true'
+        run: |
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Summary
+        run: |
+          echo "### Auto Commit Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Date**: ${{ steps.date.outputs.date }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Changes**: ${{ steps.verify.outputs.changed }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Branch**: $(git branch --show-current)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Total Commits**: $(git rev-list --count HEAD)" >> $GITHUB_STEP_SUMMARY
