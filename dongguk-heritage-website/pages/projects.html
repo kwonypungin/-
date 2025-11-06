@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="동국문화재연구원 소개">
+    <title>연구원 소개 | 동국문화재연구원</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <div class="logo-wrapper">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="25" cy="25" r="20" stroke="currentColor" stroke-width="2"/>
+                            <path d="M25 10 L25 40 M10 25 L40 25" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="25" cy="25" r="5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <h1>동국문화재연구원</h1>
+                        <span>Cultural Heritage Institute</span>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">홈</a></li>
+                <li><a href="about.html" class="nav-link active">연구원 소개</a></li>
+                <li><a href="projects.html" class="nav-link">조사 및 발굴</a></li>
+                <li><a href="publications.html" class="nav-link">연구 성과</a></li>
+                <li><a href="news.html" class="nav-link">소식·공지</a></li>
+                <li><a href="gallery.html" class="nav-link">갤러리</a></li>
+                <li><a href="contact.html" class="nav-link">연락처</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="테마 전환">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 1v3M12 20v3M22 12h-3M5 12H2M19.07 4.93l-2.12 2.12M7.05 16.95l-2.12 2.12M19.07 19.07l-2.12-2.12M7.05 7.05L4.93 4.93" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="메뉴 열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content" data-scroll>
+                <h1 class="page-title">
+                    <span class="gradient-text">연구원 소개</span>
+                </h1>
+                <p class="page-subtitle">
+                    문화유산의 가치를 발굴하고 보존하는<br>
+                    전문 연구기관
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-section">
+        <div class="container">
+            <div class="content-wrapper glass-card" data-scroll>
+                <h2>동국문화재연구원</h2>
+                <p class="lead">동국문화재연구원은 1995년 설립 이래 우리나라 문화유산의 조사·연구·보존을 선도하는 전문 연구기관으로 성장해 왔습니다.</p>
+
+                <div class="content-grid">
+                    <div>
+                        <h3>설립 목적</h3>
+                        <p>문화재에 대한 체계적인 조사·연구와 과학적인 보존·관리를 통해 문화유산의 가치를 밝히고, 이를 미래 세대에 온전히 전승하는 것을 목표로 합니다.</p>
+                    </div>
+
+                    <div>
+                        <h3>주요 사업</h3>
+                        <ul>
+                            <li>매장문화재 발굴조사</li>
+                            <li>문화재 학술연구 및 보고서 발간</li>
+                            <li>문화재 보존·복원 기술 연구</li>
+                            <li>국제 문화유산 협력 프로젝트</li>
+                            <li>학술심포지엄 및 교육 프로그램 운영</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .page-header {
+            padding: calc(80px + var(--spacing-3xl)) var(--spacing-md) var(--spacing-2xl);
+            text-align: center;
+        }
+
+        .page-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .page-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .content-wrapper {
+            padding: var(--spacing-2xl);
+            border-radius: var(--radius-xl);
+        }
+
+        .content-wrapper h2 {
+            font-size: 2rem;
+            margin-bottom: var(--spacing-md);
+            color: var(--text-primary);
+        }
+
+        .lead {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .content-grid {
+            display: grid;
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-xl);
+        }
+
+        .content-grid h3 {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-sm);
+            color: var(--celadon-primary);
+        }
+
+        .content-grid p,
+        .content-grid ul {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .content-grid ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .content-grid li {
+            padding-left: var(--spacing-md);
+            position: relative;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .content-grid li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--celadon-primary);
+            font-weight: 700;
+        }
+
+        @media (min-width: 768px) {
+            .content-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

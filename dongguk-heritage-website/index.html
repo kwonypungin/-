@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="동국문화재연구원 - 문화유산의 보존과 연구를 선도하는 전문 연구기관">
+    <meta name="keywords" content="문화재, 발굴, 연구, 동국대학교, 문화유산">
+    <title>동국문화재연구원 | Dongguk Cultural Heritage Research Institute</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <div class="logo-wrapper">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="25" cy="25" r="20" stroke="currentColor" stroke-width="2"/>
+                            <path d="M25 10 L25 40 M10 25 L40 25" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="25" cy="25" r="5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <h1>동국문화재연구원</h1>
+                        <span>Cultural Heritage Institute</span>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">홈</a></li>
+                <li><a href="pages/about.html" class="nav-link">연구원 소개</a></li>
+                <li><a href="pages/projects.html" class="nav-link">조사 및 발굴</a></li>
+                <li><a href="pages/publications.html" class="nav-link">연구 성과</a></li>
+                <li><a href="pages/news.html" class="nav-link">소식·공지</a></li>
+                <li><a href="pages/gallery.html" class="nav-link">갤러리</a></li>
+                <li><a href="pages/contact.html" class="nav-link">연락처</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="테마 전환">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 1v3M12 20v3M22 12h-3M5 12H2M19.07 4.93l-2.12 2.12M7.05 16.95l-2.12 2.12M19.07 19.07l-2.12-2.12M7.05 7.05L4.93 4.93" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="메뉴 열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <div class="hero-badge glass-card">
+                        <span class="badge-glow"></span>
+                        <span class="badge-text">Est. 1995 · 문화재연구 전문기관</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line" data-scroll>문화유산의 가치를</span>
+                        <span class="title-line" data-scroll data-scroll-delay="100">미래로 이어갑니다</span>
+                    </h1>
+                    <p class="hero-subtitle" data-scroll data-scroll-delay="200">
+                        Preserving Cultural Heritage, Enriching the Future<br>
+                        첨단 기술과 전문성으로 문화재의 가치를 세계에 알립니다
+                    </p>
+                    <div class="hero-cta" data-scroll data-scroll-delay="300">
+                        <a href="pages/about.html" class="btn btn-primary">
+                            <span>연구원 소개</span>
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="pages/projects.html" class="btn btn-glass">
+                            <span>프로젝트 보기</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-stats" data-scroll data-scroll-delay="400">
+                    <div class="stat-card glass-card">
+                        <div class="stat-number" data-count="350">0</div>
+                        <div class="stat-label">발굴조사</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-number" data-count="1200">0</div>
+                        <div class="stat-label">연구보고서</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-number" data-count="45">0</div>
+                        <div class="stat-label">국제협력</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator" data-scroll>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-header" data-scroll>
+                <span class="section-tag">Our Expertise</span>
+                <h2 class="section-title">
+                    <span class="gradient-text">전문성과 혁신</span>으로<br>
+                    문화유산을 보존합니다
+                </h2>
+                <p class="section-desc">
+                    최고 수준의 전문 연구진과 첨단 기술을 통해<br>
+                    문화재의 가치를 발굴하고 미래 세대에 전합니다
+                </p>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Large Feature Card -->
+                <div class="bento-item large glass-card" data-scroll>
+                    <div class="bento-content">
+                        <div class="feature-icon gradient-icon">
+                            <svg viewBox="0 0 64 64" fill="none">
+                                <path d="M32 8L8 20V36C8 47.6 16.8 56 32 56C47.2 56 56 47.6 56 36V20L32 8Z" stroke="currentColor" stroke-width="3"/>
+                                <circle cx="32" cy="32" r="8" stroke="currentColor" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <h3>전문 발굴조사</h3>
+                        <p>국내외 최고 수준의 전문 연구진이 체계적이고 과학적인 발굴조사를 수행합니다. 최신 조사 기법과 장비를 활용하여 문화재의 가치를 정확하게 규명합니다.</p>
+                        <div class="feature-tags">
+                            <span class="tag">정밀조사</span>
+                            <span class="tag">3D 스캐닝</span>
+                            <span class="tag">디지털 기록</span>
+                        </div>
+                    </div>
+                    <div class="bento-visual">
+                        <div class="visual-pattern pattern-1"></div>
+                    </div>
+                </div>
+
+                <!-- Medium Feature Cards -->
+                <div class="bento-item medium glass-card" data-scroll data-scroll-delay="100">
+                    <div class="feature-icon gradient-icon">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <rect x="12" y="16" width="40" height="40" rx="2" stroke="currentColor" stroke-width="3"/>
+                            <path d="M20 16V12C20 10.8954 20.8954 10 22 10H42C43.1046 10 44 10.8954 44 12V16" stroke="currentColor" stroke-width="3"/>
+                            <circle cx="32" cy="36" r="8" stroke="currentColor" stroke-width="3"/>
+                        </svg>
+                    </div>
+                    <h3>축적된 경험</h3>
+                    <p>30년 이상의 발굴 경험과 1,200개 이상의 연구 성과로 문화재 보존에 기여합니다.</p>
+                    <div class="card-footer">
+                        <span class="stat-highlight">30+ years</span>
+                    </div>
+                </div>
+
+                <div class="bento-item medium glass-card" data-scroll data-scroll-delay="150">
+                    <div class="feature-icon gradient-icon">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="3"/>
+                            <path d="M32 12v20l12 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>미래 지향</h3>
+                    <p>디지털 아카이빙과 최신 보존 기술로 미래 세대를 위한 가치를 창출합니다.</p>
+                    <div class="card-footer">
+                        <span class="stat-highlight">Innovation</span>
+                    </div>
+                </div>
+
+                <!-- Small Feature Cards -->
+                <div class="bento-item small glass-card" data-scroll data-scroll-delay="200">
+                    <div class="feature-number">350+</div>
+                    <p>발굴조사 프로젝트</p>
+                </div>
+
+                <div class="bento-item small glass-card" data-scroll data-scroll-delay="250">
+                    <div class="feature-number">150+</div>
+                    <p>학술논문 발표</p>
+                </div>
+
+                <!-- Wide Feature Card -->
+                <div class="bento-item wide glass-card" data-scroll data-scroll-delay="300">
+                    <div class="bento-content">
+                        <div class="feature-icon gradient-icon">
+                            <svg viewBox="0 0 64 64" fill="none">
+                                <path d="M32 56C45.2548 56 56 45.2548 56 32C56 18.7452 45.2548 8 32 8C18.7452 8 8 18.7452 8 32C8 45.2548 18.7452 56 32 56Z" stroke="currentColor" stroke-width="3"/>
+                                <path d="M32 16v16l8 8" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="content-text">
+                            <h3>국제 협력 연구</h3>
+                            <p>세계 유수의 연구기관과 협력하여 글로벌 문화유산 보존에 기여하고 있습니다</p>
+                        </div>
+                    </div>
+                    <div class="partnership-logos">
+                        <div class="partner-badge">UNESCO</div>
+                        <div class="partner-badge">ICOMOS</div>
+                        <div class="partner-badge">ICCROM</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <div class="section-header" data-scroll>
+                <span class="section-tag">Current Projects</span>
+                <h2 class="section-title">
+                    진행 중인 <span class="gradient-text">주요 프로젝트</span>
+                </h2>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card glass-card" data-scroll>
+                    <div class="project-image">
+                        <div class="image-overlay gradient-overlay-1"></div>
+                        <div class="project-badge">발굴조사</div>
+                        <div class="project-status">진행중</div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="meta-item">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <rect x="3" y="6" width="18" height="15" rx="2" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M3 10h18M8 6V4M16 6V4" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                2024.01 - 진행중
+                            </span>
+                            <span class="meta-item">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                경주
+                            </span>
+                        </div>
+                        <h3>경주 월성 발굴조사</h3>
+                        <p>신라 왕경의 중심지인 월성 일대의 체계적인 발굴조사를 통해 고대 왕궁의 구조와 변천 과정을 규명하고 있습니다.</p>
+                        <a href="pages/projects.html" class="project-link">
+                            <span>자세히 보기</span>
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card glass-card" data-scroll data-scroll-delay="100">
+                    <div class="project-image">
+                        <div class="image-overlay gradient-overlay-2"></div>
+                        <div class="project-badge">학술연구</div>
+                        <div class="project-status">2024</div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="meta-item">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <rect x="3" y="6" width="18" height="15" rx="2" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M3 10h18M8 6V4M16 6V4" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                2024.03 - 2024.12
+                            </span>
+                            <span class="meta-item">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                강진
+                            </span>
+                        </div>
+                        <h3>고려시대 청자 가마터 조사</h3>
+                        <p>강진 일대 고려청자 가마터에 대한 정밀 조사를 통해 청자 생산 기술의 발전 과정과 유통 체계를 연구하고 있습니다.</p>
+                        <a href="pages/projects.html" class="project-link">
+                            <span>자세히 보기</span>
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card glass-card" data-scroll data-scroll-delay="200">
+                    <div class="project-image">
+                        <div class="image-overlay gradient-overlay-3"></div>
+                        <div class="project-badge">보존처리</div>
+                        <div class="project-status">진행중</div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="meta-item">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <rect x="3" y="6" width="18" height="15" rx="2" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M3 10h18M8 6V4M16 6V4" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                2023.09 - 진행중
+                            </span>
+                            <span class="meta-item">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                수원
+                            </span>
+                        </div>
+                        <h3>조선시대 석조문화재 보존</h3>
+                        <p>수원 화성을 비롯한 조선시대 주요 석조문화재의 과학적 보존처리와 장기 보존 방안을 연구하고 있습니다.</p>
+                        <a href="pages/projects.html" class="project-link">
+                            <span>자세히 보기</span>
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="section-cta" data-scroll>
+                <a href="pages/projects.html" class="btn btn-outline">
+                    <span>전체 프로젝트 보기</span>
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section" id="news">
+        <div class="container">
+            <div class="section-header" data-scroll>
+                <span class="section-tag">Latest News</span>
+                <h2 class="section-title">
+                    <span class="gradient-text">최신 소식</span> 및 공지사항
+                </h2>
+            </div>
+
+            <div class="news-grid">
+                <article class="news-card glass-card" data-scroll>
+                    <div class="news-header">
+                        <span class="news-badge badge-notice">공지</span>
+                        <time class="news-date">2024.11.01</time>
+                    </div>
+                    <h3 class="news-title">2024년 하반기 학술심포지엄 개최 안내</h3>
+                    <p class="news-excerpt">고려시대 문화유산의 재조명을 주제로 한 학술심포지엄이 12월 15일 개최됩니다. 국내외 저명한 연구자들이 참여합니다.</p>
+                    <a href="pages/news.html" class="news-link">
+                        <span>자세히 보기</span>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </article>
+
+                <article class="news-card glass-card" data-scroll data-scroll-delay="100">
+                    <div class="news-header">
+                        <span class="news-badge badge-research">연구</span>
+                        <time class="news-date">2024.10.28</time>
+                    </div>
+                    <h3 class="news-title">경주 월성 신라 왕궁지 중요 유구 발견</h3>
+                    <p class="news-excerpt">월성 발굴조사에서 신라시대 대형 건물지와 다량의 유물이 출토되었습니다. 왕궁 구조 규명에 중요한 단서가 될 것으로 기대됩니다.</p>
+                    <a href="pages/news.html" class="news-link">
+                        <span>자세히 보기</span>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </article>
+
+                <article class="news-card glass-card" data-scroll data-scroll-delay="200">
+                    <div class="news-header">
+                        <span class="news-badge badge-achievement">성과</span>
+                        <time class="news-date">2024.10.20</time>
+                    </div>
+                    <h3 class="news-title">우수 발굴조사 기관 선정</h3>
+                    <p class="news-excerpt">문화재청으로부터 2024년 우수 발굴조사 기관으로 선정되었습니다. 전문성과 체계적인 조사 방법을 인정받았습니다.</p>
+                    <a href="pages/news.html" class="news-link">
+                        <span>자세히 보기</span>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </article>
+            </div>
+
+            <div class="section-cta" data-scroll>
+                <a href="pages/news.html" class="btn btn-outline">
+                    <span>더 많은 소식 보기</span>
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-pattern"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <h3>동국문화재연구원</h3>
+                        <p class="footer-subtitle">Dongguk Cultural Heritage Research Institute</p>
+                        <p class="footer-desc">문화유산의 보존과 연구를 통해 역사의 가치를 미래로 이어갑니다</p>
+                    </div>
+
+                    <div class="footer-links-wrapper">
+                        <div class="footer-links">
+                            <h4>바로가기</h4>
+                            <ul>
+                                <li><a href="pages/about.html">연구원 소개</a></li>
+                                <li><a href="pages/projects.html">조사 및 발굴</a></li>
+                                <li><a href="pages/publications.html">연구 성과</a></li>
+                                <li><a href="pages/news.html">소식·공지</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-links">
+                            <h4>정보</h4>
+                            <ul>
+                                <li><a href="pages/gallery.html">갤러리</a></li>
+                                <li><a href="pages/contact.html">연락처</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-links">
+                            <h4>관련기관</h4>
+                            <ul>
+                                <li><a href="https://www.dongguk.edu" target="_blank">동국대학교</a></li>
+                                <li><a href="https://www.cha.go.kr" target="_blank">문화재청</a></li>
+                                <li><a href="https://www.nrich.go.kr" target="_blank">국립문화재연구소</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-contact glass-card">
+                    <h4>Contact</h4>
+                    <address>
+                        <p>서울특별시 중구 필동로 1길 30 (필동 3가)</p>
+                        <p>동국대학교 문화학술관</p>
+                    </address>
+                    <div class="contact-details">
+                        <p>Tel: 02-2260-3680</p>
+                        <p>Fax: 02-2277-1274</p>
+                        <p>Email: heritage@dongguk.edu</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dongguk Cultural Heritage Research Institute. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M9.75 15.02l5.75-3.27-5.75-3.27v6.54z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top glass-card" id="backToTop" aria-label="맨 위로">
+        <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
